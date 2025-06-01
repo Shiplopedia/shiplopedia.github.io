@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiplopedia</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+  <header class="bg-blue-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Shiplopedia</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#ships" class="hover:underline">Shipopedia</a>
+        <a href="#tools" class="hover:underline">Tools</a>
+        <a href="#blog" class="hover:underline">Blog</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-blue-100 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Shiplopedia</h2>
+    <p class="text-lg">Your ultimate guide to everything about ships – from design to construction and beyond.</p>
+  </section>
+
+  <section id="ships" class="py-16 container mx-auto">
+    <h3 class="text-3xl font-bold mb-6">Explore Ship Types</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-4 border rounded-xl shadow">Bulk Carriers</div>
+      <div class="p-4 border rounded-xl shadow">Tankers</div>
+      <div class="p-4 border rounded-xl shadow">Naval Vessels</div>
+    </div>
+  </section>
+
+  <section id="tools" class="py-16 bg-gray-100 container mx-auto">
+    <h3 class="text-3xl font-bold mb-6">Free Tools & Simulations</h3>
+    <ul class="list-disc list-inside">
+      <li>OpenFOAM tutorials</li>
+      <li>MoorDyn setup guides</li>
+      <li>Free OrcaFlex alternatives</li>
+    </ul>
+  </section>
+
+  <section id="blog" class="py-16 container mx-auto">
+    <h3 class="text-3xl font-bold mb-6">Latest from the Blog</h3>
+    <p>Coming soon: articles on ship design, case studies, GATE prep, and more!</p>
+  </section>
+
+  <footer id="contact" class="bg-blue-900 text-white p-6 text-center">
+    <p>Created with ❤️ by the Shiplopedia Team</p>
+    <p>Email: your@email.com</p>
+  </footer>
+</body>
+</html>
