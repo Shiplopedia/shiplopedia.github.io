@@ -87,34 +87,34 @@
   </section>
 
   <section id="tools" class="py-16 bg-gray-100 container mx-auto">
-    <h3 class="text-3xl font-bold mb-6">Free Tools & Simulations</h3>
-    <ul class="list-disc list-inside">
-  <div class="accordion">
-    <button class="accordion-btn">🔧 OpenFOAM Basics</button>
-    <div class="accordion-content">
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=n2iDOBe4h5A" target="_blank">How to Install and Use OpenFOAM | Beginner Tutorial Series #1</a></li>
-        <li><a href="https://www.youtube.com/watch?v=y3OyTnrH_pI" target="_blank">How to Run Your Absolute First OpenFOAM Simulation</a></li>
-        <li><a href="https://www.youtube.com/playlist?list=PLhPfNw4V4_YRhBU4IqSaToQ8_X543YQsZ" target="_blank">OpenFOAM for Windows Newbie Guide</a></li>
+  <div class="accordion space-y-4">
+  <div>
+    <button class="accordion-btn bg-blue-800 text-white w-full px-4 py-2 rounded">🔧 OpenFOAM Basics</button>
+    <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+      <ul class="p-4">
+        <li><a href="https://www.youtube.com/watch?v=n2iDOBe4h5A" target="_blank">How to Install and Use OpenFOAM</a></li>
+        <li><a href="https://www.youtube.com/watch?v=y3OyTnrH_pI" target="_blank">Your First OpenFOAM Simulation</a></li>
       </ul>
+    </div>
+  </div>
+
+  <div>
+    <button class="accordion-btn bg-blue-800 text-white w-full px-4 py-2 rounded">⚙️ MoorDyn Setup Guides</button>
+    <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+      <ul class="p-4">
+        <li><a href="https://www.youtube.com/watch?v=P1_jwPuUBqE" target="_blank">Couple OpenFOAM and MoorDyn</a></li>
+        <li><a href="https://www.youtube.com/watch?v=rqUVK9dCsU0" target="_blank">WEC-Sim & MoorDyn</a></li>
+      </ul>
+    </div>
     </div>
 
-    <button class="accordion-btn">⚙️ MoorDyn Setup Guides</button>
-    <div class="accordion-content">
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=P1_jwPuUBqE" target="_blank">How to Couple OpenFOAM and MoorDyn</a></li>
-        <li><a href="https://www.youtube.com/watch?v=rqUVK9dCsU0" target="_blank">WEC-Sim Advanced Features #8 - MoorDyn and WEC-Sim</a></li>
-        <li><a href="https://www.youtube.com/watch?v=YUSxGXPkYvE" target="_blank">Floating Solid Box with Four Mooring Lines Using MoorDyn</a></li>
+    <div>
+    <button class="accordion-btn bg-blue-800 text-white w-full px-4 py-2 rounded">💻 OrcaFlex Tutorials</button>
+    <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+      <ul class="p-4">
+        <li><a href="https://www.youtube.com/watch?v=YUSxGXPkYvE" target="_blank">Floating Box with Mooring</a></li>
       </ul>
     </div>
-    
-    <button class="accordion-btn">💻 OrcaFlex Tutorials</button>
-    <div class="accordion-content">
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=P1_jwPuUBqE" target="_blank">How to Couple OpenFOAM and MoorDyn</a></li>
-        <li><a href="https://www.youtube.com/watch?v=rqUVK9dCsU0" target="_blank">WEC-Sim Advanced Features #8 - MoorDyn and WEC-Sim</a></li>
-        <li><a href="https://www.youtube.com/watch?v=YUSxGXPkYvE" target="_blank">Floating Solid Box with Four Mooring Lines Using MoorDyn</a></li>
-      </ul>
     </div>
   </div>
   </section>
@@ -138,12 +138,25 @@
   </footer>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll('.accordion-btn');
+    const buttons = document.querySelectorAll(".accordion-btn");
 
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const panel = button.nextElementSibling;
-        panel.classList.toggle("open");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+
+        // Close all others
+        document.querySelectorAll('.accordion-content').forEach(panel => {
+          if (panel !== content) {
+            panel.style.maxHeight = null;
+          }
+        });
+
+        // Toggle current
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
       });
     });
   });
