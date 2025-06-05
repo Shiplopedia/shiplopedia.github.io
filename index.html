@@ -29,11 +29,15 @@
   }
 
   .accordion-content {
-    display: none;
-    padding: 10px 0;
-    animation: fadein 0.3s;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 10px;
   }
-
+  .accordion-content.open {
+    max-height: 500px; /* Enough height to show contents */
+  }
+  
   .accordion-content iframe {
     margin-bottom: 15px;
   }
@@ -133,20 +137,14 @@
     </p>
   </footer>
 <script>
-  const buttons = document.querySelectorAll('.accordion-btn');
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll('.accordion-btn');
 
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      // Toggle active class
-      button.classList.toggle('active');
-
-      // Toggle the panel
-      const panel = button.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const panel = button.nextElementSibling;
+        panel.classList.toggle("open");
+      });
     });
   });
 </script>
