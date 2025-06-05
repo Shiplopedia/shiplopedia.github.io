@@ -53,15 +53,6 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<script>
-  const accBtns = document.querySelectorAll(".accordion-btn");
-  accBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      content.style.display = (content.style.display === "block") ? "none" : "block";
-    });
-  });
-</script>
 <body class="bg-gray-100 text-gray-900">
 
   <header class="bg-blue-900 text-white p-4 flex items-center space-x-4">
