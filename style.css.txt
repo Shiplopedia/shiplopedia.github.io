@@ -1,0 +1,25 @@
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+  padding-left: 1rem;
+  border-left: 3px solid #003366;
+}
+
+.accordion-btn {
+  background-color: #003366;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.accordion-btn.active {
+  background-color: #005199;
+}
