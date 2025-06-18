@@ -90,71 +90,66 @@
     </div>
   </section>
 
-  <section id="tools" class="py-16 bg-gray-100 container mx-auto">
-    <h3 class="text-4xl font-bold mb-6">Tools and Simulation</h3>  
-  <! AUTO CAD SECTION >
-<section id="autocad-hydrostatics" class="py-16 bg-gray-100 container mx-auto">
-  <h3 class="text-3xl font-bold mb-6">AutoCAD for Hydrostatics and Stability</h3>
+<section class="py-16 bg-gray-100 container mx-auto">
+  <h3 class="text-3xl font-bold mb-6">Tools and Simulation</h3>
+
+  <!-- MAIN ACCORDION: AUTOCAD FOR HYDROSTATICS -->
+  <div class="accordion">
+    <button class="accordion-btn">🛠️ AutoCAD for Hydrostatics and Stability</button>
+    <div class="accordion-content">
+
+      <!-- NESTED ACCORDION -->
+      <div class="nested-accordion">
+
+        <button class="nested-btn">📊 Sample Offset Table (Used in Tutorial)</button>
+        <div class="nested-content">
+          <p>Download the offset table used in the tutorial series.</p>
+          <a href="downloads/Offset table.xlsx" class="inline-block px-4 py-2 bg-blue-600 text-white rounded mt-2">📥 Download</a>
+        </div>
+
+        <button class="nested-btn">📐 Drawing a Ship's Lines Plan in AutoCAD</button>
+        <div class="nested-content">
+          <ul class="list-disc pl-5">
+            <li><a href="https://www.youtube.com/watch?v=dOIoa66Vry8" target="_blank">Part 1: Creating the Baseline</a></li>
+            <li><a href="https://www.youtube.com/watch?v=VWfSM5VEvJ4" target="_blank">Part 2: Half-Breadth Plan</a></li>
+            <li><a href="https://www.youtube.com/watch?v=GnhoKhIYHaY" target="_blank">Part 3: Completing Waterlines</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Bp52PklDtTo" target="_blank">Part 4: Body Plan</a></li>
+            <li><a href="https://www.youtube.com/watch?v=mOJbaMRpM8c" target="_blank">Part 5: Finalizing Views</a></li>
+            <li><a href="https://www.youtube.com/watch?v=1TuownLGHR0" target="_blank">Part 6: Cleanup</a></li>
+          </ul>
+        </div>
+
+        <button class="nested-btn">⚖️ Extracting Hydrostatics from the Lines Plan</button>
+        <div class="nested-content">
+          <ul class="list-disc pl-5">
+            <li><a href="https://www.youtube.com/watch?v=sin-5HsLlHU" target="_blank">Part 7: Waterplane Area</a></li>
+            <li><a href="https://www.youtube.com/watch?v=qMgSSUIZZAU" target="_blank">Part 8: Displacement</a></li>
+            <li><a href="https://www.youtube.com/watch?v=UJQZhMvKD7s" target="_blank">Part 9: Draft and Volume</a></li>
+            <li><a href="https://www.youtube.com/watch?v=3jBhzKyUYiI" target="_blank">Part 10: Center of Buoyancy</a></li>
+            <li><a href="https://www.youtube.com/watch?v=3xtNdfdsJus" target="_blank">Part 11: BM and GM</a></li>
+            <li><a href="https://www.youtube.com/watch?v=mw1eS3SUf-c" target="_blank">Part 12: Final Review</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- OTHER SECTIONS -->
+  <div class="accordion">
+    <button class="accordion-btn">🌊 CFD for Naval Architecture/Marine Engineering</button>
+    <div class="accordion-content">
+      <p>Coming soon...</p>
+    </div>
+  </div>
 
   <div class="accordion">
-
-    <button class="accordion-btn">📊 Sample Offset Table (Used in Tutorial)</button>
+    <button class="accordion-btn">🌀 OrcaFlex Tutorials</button>
     <div class="accordion-content">
-      <p class="mb-3">Download the offset table that is used in the following tutorial series to draw the ship's lines plan in AutoCAD.</p>
-      <a href="downloads/Offset table.xlsx" download class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">📥 Download Offset Table (Excel)</a>
+      <p>Coming soon...</p>
     </div>
-
-    <button class="accordion-btn">📐 Drawing a Ship's Lines Plan in AutoCAD</button>
-    <div class="accordion-content">
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=dOIoa66Vry8" target="_blank">Part 1: Creating the Baseline, Profile and Station Lines</a></li>
-        <li><a href="https://www.youtube.com/watch?v=VWfSM5VEvJ4" target="_blank">Part 2: Drawing the Half-Breadth Plan</a></li>
-        <li><a href="https://www.youtube.com/watch?v=GnhoKhIYHaY" target="_blank">Part 3: Completing Waterlines in the Half-Breadth View</a></li>
-        <li><a href="https://www.youtube.com/watch?v=Bp52PklDtTo" target="_blank">Part 4: Drawing the Body Plan (Station Curves)</a></li>
-        <li><a href="https://www.youtube.com/watch?v=mOJbaMRpM8c" target="_blank">Part 5: Finalizing the Body Plan View</a></li>
-        <li><a href="https://www.youtube.com/watch?v=1TuownLGHR0" target="_blank">Part 6: Making Modifications and Clean-Up</a></li>
-      </ul>
-    </div>
-
-    <button class="accordion-btn">⚖️ Extracting Hydrostatics from the Lines Plan</button>
-    <div class="accordion-content">
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=sin-5HsLlHU" target="_blank">Part 7: Calculating Waterplane Area</a></li>
-        <li><a href="https://www.youtube.com/watch?v=qMgSSUIZZAU" target="_blank">Part 8: Estimating Displacement using Simpson’s Rule</a></li>
-        <li><a href="https://www.youtube.com/watch?v=UJQZhMvKD7s" target="_blank">Part 9: Calculating Draft and Volume</a></li>
-        <li><a href="https://www.youtube.com/watch?v=3jBhzKyUYiI" target="_blank">Part 10: Determining Center of Buoyancy (KB)</a></li>
-        <li><a href="https://www.youtube.com/watch?v=3xtNdfdsJus" target="_blank">Part 11: Calculating BM and GM for Stability</a></li>
-        <li><a href="https://www.youtube.com/watch?v=mw1eS3SUf-c" target="_blank">Part 12: Wrapping Up and Final Review</a></li>
-      </ul>
-    </div>
-
   </div>
 </section>
-
-
-  <div class="accordion space-y-4">  
-  <div>
-    <button class="accordion-btn bg-blue-800 text-white w-full px-4 py-2 rounded">🌊 CFD for Naval Architecture/Marine Engineering</button>
-    <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
-      <ul class="p-4">
-        <li><a href="https://www.youtube.com/watch?v=P1_jwPuUBqE" target="_blank">Couple OpenFOAM and MoorDyn</a></li>
-        <li><a href="https://www.youtube.com/watch?v=rqUVK9dCsU0" target="_blank">WEC-Sim & MoorDyn</a></li>
-      </ul>
-    </div>
-  </div>
-  </div>
-
-  <div class="accordion space-y-4">
-  <div>
-    <button class="accordion-btn bg-blue-800 text-white w-full px-4 py-2 rounded">💻 OrcaFlex Tutorials</button>
-    <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
-      <ul class="p-4">
-        <li><a href="https://www.youtube.com/watch?v=YUSxGXPkYvE" target="_blank">Floating Box with Mooring</a></li>
-      </ul>
-    </div>
-  </div>
-  </div>
-  </section>
 
   <section id="news" class="py-16 container mx-auto">
     <h3 class="text-4xl font-bold mb-6">From SHORES to SEA - latest news about maritime sector</h3>
