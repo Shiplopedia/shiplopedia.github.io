@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INS Nistar - Breaking News</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white p-4 flex items-center space-x-4">
+    <img src="logo.png" alt="Shiplopedia Logo" class="h-10 w-10">
+    <h1 class="text-xl font-bold">Shiplopedia</h1>
+  </header>
+
+  <!-- NEWS SECTION -->
+  <main class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-6">🚨 INS Nistar: India's Latest Submarine Rescue Vessel</h1>
+
+    <img src="images/ins-nistar.jpg" alt="INS Nistar" class="w-full rounded-lg shadow-lg mb-6">
+
+    <p class="text-lg leading-relaxed mb-4">
+      INS Nistar is India's latest addition to its submarine rescue fleet. Launched on [insert date], it represents a significant leap in maritime self-reliance under the "Aatmanirbhar Bharat" initiative.
+    </p>
+
+    <p class="text-lg leading-relaxed mb-4">
+      Designed by Hindustan Shipyard Ltd and equipped with a cutting-edge Deep Submergence Rescue Vessel (DSRV), INS Nistar can perform rapid deployment rescue operations up to 650 meters underwater.
+    </p>
+
+    <p class="text-lg leading-relaxed mb-4">
+      It carries remotely operated vehicles (ROVs), side-scan sonar, medical facilities, decompression chambers, and advanced communication systems — making it one of the most advanced platforms of its kind.
+    </p>
+
+    <!-- BACK BUTTON -->
+    <a href="index.html#news" class="inline-block mt-6 px-5 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800 transition">
+      ← Back to Homepage
+    </a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white text-center p-4 mt-12">
+    <p>Created with ❤️ by Shiven Bhatnagar</p>
+  </footer>
+
+</body>
+</html>
